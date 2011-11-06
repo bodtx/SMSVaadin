@@ -16,6 +16,7 @@ public class SmsvaadinApplication extends Application {
 		win.setSizeFull();
 		//vert.addComponent(win);
 		mainWindow.addComponent(win);
+		setTheme("sms");
 		mainWindow.setSizeFull();
 		setMainWindow(mainWindow);
 		

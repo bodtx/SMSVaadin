@@ -5,6 +5,7 @@ import com.vaadin.data.util.ObjectProperty;
 import com.vaadin.event.FieldEvents.TextChangeEvent;
 import com.vaadin.event.FieldEvents.TextChangeListener;
 import com.vaadin.terminal.ExternalResource;
+import com.vaadin.terminal.UserError;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
@@ -64,9 +65,11 @@ public class Windowsms extends CustomComponent {
 					label_1.setStyleName("redLabel");
 					label_1.setValue("140 caractères max");
 					textArea_1.setValue(event.getText().substring(0,140));
+//					textArea_1.setComponentError(new UserError("140 caractères max"));
 				}
 				else{
 					label_1.setStyleName("blackLabel");
+//					textArea_1.setComponentError(null);
 				}
 				
 				
